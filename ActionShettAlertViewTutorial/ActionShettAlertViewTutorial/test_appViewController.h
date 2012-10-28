@@ -19,7 +19,7 @@
     UITextField		*textfield;
     UITextField		*textfield2;
     
-    IBOutlet UITextField *textField3;
+   // IBOutlet UITextField *textField3;
 }
 
 @end

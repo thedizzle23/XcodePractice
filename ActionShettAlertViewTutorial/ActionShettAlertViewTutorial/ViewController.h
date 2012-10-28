@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UIActionSheetDelegate>
-@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+@interface ViewController : UIViewController <UIActionSheetDelegate> {
+    
+    
+    
+}
+@property (strong, nonatomic) IBOutlet UILabel *displayLabel;
 - (IBAction)showAlert:(id)sender;
 - (IBAction)showActionSheetNow:(id)sender;
 

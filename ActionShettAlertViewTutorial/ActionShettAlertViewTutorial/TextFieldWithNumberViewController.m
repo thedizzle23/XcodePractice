@@ -46,7 +46,6 @@
                                                    cancelButtonTitle:@"OK" 
                                                    otherButtonTitles:nil];
         [obj_AlertView show];
-        [obj_AlertView release];
 
         
          return !([newString length] > 8);

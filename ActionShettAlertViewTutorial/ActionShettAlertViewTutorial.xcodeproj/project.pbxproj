@@ -28,6 +28,9 @@
 		B2417639163C9B5000982045 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2417637163C9B5000982045 /* InfoPlist.strings */; };
 		B241763C163C9B5000982045 /* ActionShettAlertViewTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B241763B163C9B5000982045 /* ActionShettAlertViewTutorialTests.m */; };
 		B2561D3C163D9345004F675D /* test_appViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2561D3B163D9345004F675D /* test_appViewController.m */; };
+		B2561D42163D9783004F675D /* UIGlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2561D41163D9783004F675D /* UIGlossyButton.m */; };
+		B2561D45163D9795004F675D /* UIView+LayerEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B2561D44163D9795004F675D /* UIView+LayerEffects.m */; };
+		B2561D48163D97A6004F675D /* TestButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2561D47163D97A6004F675D /* TestButtonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,12 @@
 		B241763B163C9B5000982045 /* ActionShettAlertViewTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionShettAlertViewTutorialTests.m; sourceTree = "<group>"; };
 		B2561D39163D9338004F675D /* test_appViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = test_appViewController.h; sourceTree = "<group>"; };
 		B2561D3B163D9345004F675D /* test_appViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = test_appViewController.m; sourceTree = "<group>"; };
+		B2561D41163D9783004F675D /* UIGlossyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGlossyButton.m; sourceTree = "<group>"; };
+		B2561D43163D978C004F675D /* UIGlossyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGlossyButton.h; sourceTree = "<group>"; };
+		B2561D44163D9795004F675D /* UIView+LayerEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayerEffects.m"; sourceTree = "<group>"; };
+		B2561D46163D97A1004F675D /* UIView+LayerEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerEffects.h"; sourceTree = "<group>"; };
+		B2561D47163D97A6004F675D /* TestButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestButtonViewController.m; sourceTree = "<group>"; };
+		B2561D49163D97A9004F675D /* TestButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestButtonViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +140,12 @@
 		B241760D163C9B4F00982045 /* ActionShettAlertViewTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				B2561D49163D97A9004F675D /* TestButtonViewController.h */,
+				B2561D47163D97A6004F675D /* TestButtonViewController.m */,
+				B2561D46163D97A1004F675D /* UIView+LayerEffects.h */,
+				B2561D44163D9795004F675D /* UIView+LayerEffects.m */,
+				B2561D43163D978C004F675D /* UIGlossyButton.h */,
+				B2561D41163D9783004F675D /* UIGlossyButton.m */,
 				B2561D39163D9338004F675D /* test_appViewController.h */,
 				B2561D3B163D9345004F675D /* test_appViewController.m */,
 				B2417616163C9B4F00982045 /* AppDelegate.h */,
@@ -301,6 +316,9 @@
 				B219DC41163CED9E0038C1B9 /* TheUIWEBVIEWViewController.m in Sources */,
 				B219DC44163CEE0C0038C1B9 /* RobsDefaultFacebookviewController.m in Sources */,
 				B2561D3C163D9345004F675D /* test_appViewController.m in Sources */,
+				B2561D42163D9783004F675D /* UIGlossyButton.m in Sources */,
+				B2561D45163D9795004F675D /* UIView+LayerEffects.m in Sources */,
+				B2561D48163D97A6004F675D /* TestButtonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +431,7 @@
 		B2417640163C9B5000982045 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionShettAlertViewTutorial/ActionShettAlertViewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "ActionShettAlertViewTutorial/ActionShettAlertViewTutorial-Info.plist";
@@ -424,6 +443,7 @@
 		B2417641163C9B5000982045 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ActionShettAlertViewTutorial/ActionShettAlertViewTutorial-Prefix.pch";
 				INFOPLIST_FILE = "ActionShettAlertViewTutorial/ActionShettAlertViewTutorial-Info.plist";
@@ -436,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ActionShettAlertViewTutorial.app/ActionShettAlertViewTutorial";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
@@ -453,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ActionShettAlertViewTutorial.app/ActionShettAlertViewTutorial";
+				CLANG_ENABLE_OBJC_ARC = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",

@@ -93,7 +93,7 @@
 {
   if (self = [super init]) 
   {
-    self.view = [[[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]] autorelease];
+    self.view = [[UIView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];
 		self.view.backgroundColor = [UIColor whiteColor];
 
 		// Create scrollview
@@ -128,11 +128,5 @@
   return self;  
 }
 
-- (void)dealloc 
-{
-  [super dealloc];
-  [scrollview release];
-  [textfield release];
-}
 
 @end
