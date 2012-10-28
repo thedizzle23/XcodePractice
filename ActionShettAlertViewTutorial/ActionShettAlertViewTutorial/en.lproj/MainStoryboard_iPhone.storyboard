@@ -156,9 +156,9 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-dY-O3f">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LxN-Z2-t8d">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Go Next">
+                                <state key="normal" title="Modal XIB Switch">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -166,14 +166,14 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="fru-7W-Qc0" kind="push" id="9IJ-W0-iax"/>
+                                    <action selector="switchModalFile:" destination="jwl-QM-yqj" eventType="touchUpInside" id="Ehj-dE-BKz"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="cSu-dY-O3f" firstAttribute="centerX" secondItem="8jg-Qd-t27" secondAttribute="centerX" type="default" id="LFE-Fm-iYD"/>
-                            <constraint firstItem="cSu-dY-O3f" firstAttribute="top" secondItem="8jg-Qd-t27" secondAttribute="top" constant="60" id="vxI-3n-7m5"/>
+                            <constraint firstItem="LxN-Z2-t8d" firstAttribute="centerX" secondItem="8jg-Qd-t27" secondAttribute="centerX" type="default" id="Ie6-ws-gzI"/>
+                            <constraint firstItem="LxN-Z2-t8d" firstAttribute="top" secondItem="8jg-Qd-t27" secondAttribute="top" constant="230" id="VNS-Hp-qjz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Text Input" id="72n-bC-7eY"/>
@@ -181,21 +181,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zdh-d0-wR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1793" y="46"/>
-        </scene>
-        <!--Test Button View Controller - Glossy Button View Controller-->
-        <scene sceneID="Ad5-Ic-Zkw">
-            <objects>
-                <viewController id="fru-7W-Qc0" customClass="TestButtonViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nYf-Rz-ZfA">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="Glossy Button View Controller" id="d0t-No-51f"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0b6-eV-x1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2161" y="48"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="cqi-KH-nMK">
@@ -226,9 +211,6 @@
                 <relationship kind="outlet" name="webView" candidateClass="UIWebView"/>
             </relationships>
         </class>
-        <class className="TestButtonViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/TestButtonViewController.h"/>
-        </class>
         <class className="TextFieldWithNumberViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TextFieldWithNumberViewController.h"/>
             <relationships>
@@ -245,6 +227,9 @@
         </class>
         <class className="test_appViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/test_appViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="switchModalFile:" candidateClass="UIButton"/>
+            </relationships>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

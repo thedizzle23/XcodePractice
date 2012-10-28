@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TestButtonViewController.h"
 
 @interface test_appViewController : UIViewController  <UIScrollViewDelegate, UITextFieldDelegate>
 {
@@ -21,6 +22,8 @@
     
    // IBOutlet UITextField *textField3;
 }
+
+-(IBAction)switchModalFile:(UIButton *)sender;
 
 @end
 

@@ -7,11 +7,60 @@
 //
 
 #import "TextFieldWithNumberViewController.h"
-
+#import "TestButtonViewController.h"
 @implementation TextFieldWithNumberViewController
 
 
 @synthesize text;
+
+
+-(IBAction)switchModalFile:(UIButton *)sender {
+    
+    
+    
+    TestButtonViewController *testButtonView = [[TestButtonViewController alloc] initWithNibName:@"TestButtonViewController" bundle:nil];
+    testButtonView.delegate = self;
+    
+    testButtonView.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:testButtonView animated:YES completion:NULL];
+    
+    
+}
+
+/*
+-(IBAction)switchModalFile:(id)sender {
+    
+    TestButtonViewController *testButtonView = [[TestButtonViewController alloc] initWithNibName:@"TestButtonViewController" bundle:nil];
+    testButtonView.delegate = self;
+    
+    testButtonView.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:testButtonView animated:YES completion:NULL];
+    
+    
+    
+    
+    
+    
+    
+    
+}
+ 
+ */
+
+
+/*
+
+- (IBAction)selectedFullScreen:(UIButton *)sender
+{
+    UYLPresentedViewController *viewController = [[UYLPresentedViewController alloc]
+                                                  initWithNibName:@"UYLPresentedViewController"
+                                                  bundle:nil];
+    viewController.delegate = self;
+    viewController.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:viewController animated:YES completion:NULL];
+}
+ 
+ */
 
 - (void)viewDidLoad {
 	text.delegate = self;

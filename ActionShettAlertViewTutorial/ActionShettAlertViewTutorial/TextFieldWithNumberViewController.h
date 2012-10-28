@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+//#import "TestButtonViewController.h"
 
 @interface TextFieldWithNumberViewController : UIViewController < UITextFieldDelegate > {
 	IBOutlet UITextField *text;
@@ -14,4 +15,6 @@
 
 @property (nonatomic ,strong) IBOutlet UITextField *text;
 
+
+//-(IBAction)switchModalFile:(UIButton *)sender;
 @end

@@ -12,8 +12,24 @@
 #define SCROLLVIEW_CONTENT_WIDTH  320
 
 #import "test_appViewController.h"
+#import "TestButtonViewController.h"
 
 @implementation test_appViewController
+
+
+-(IBAction)switchModalFile:(UIButton *)sender {
+    
+    
+    
+    TestButtonViewController *testButtonView = [[TestButtonViewController alloc] initWithNibName:@"TestButtonViewController" bundle:nil];
+    testButtonView.delegate = self;
+    
+    testButtonView.modalPresentationStyle = UIModalPresentationFullScreen;
+    [self presentViewController:testButtonView animated:YES completion:NULL];
+    
+    
+}
+
 
 - (void) viewWillAppear:(BOOL)animated 
 {

@@ -10,8 +10,28 @@
 #import "UIGlossyButton.h"
 #import <QuartzCore/QuartzCore.h>
 #import "UIView+LayerEffects.h"
+#import "test_appViewController.h"
 
 @implementation TestButtonViewController
+
+
+- (void)didDismissPresentedViewController
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+
+-(IBAction)didSelectDone:(UIButton *)sender {
+    
+    
+        [self.delegate didDismissPresentedViewController];
+    
+
+    
+    
+    
+}
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

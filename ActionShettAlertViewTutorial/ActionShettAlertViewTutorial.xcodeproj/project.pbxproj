@@ -31,6 +31,7 @@
 		B2561D42163D9783004F675D /* UIGlossyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B2561D41163D9783004F675D /* UIGlossyButton.m */; };
 		B2561D45163D9795004F675D /* UIView+LayerEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = B2561D44163D9795004F675D /* UIView+LayerEffects.m */; };
 		B2561D48163D97A6004F675D /* TestButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2561D47163D97A6004F675D /* TestButtonViewController.m */; };
+		B2561D4B163D98EB004F675D /* TestButtonViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2561D4A163D98EB004F675D /* TestButtonViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		B2561D46163D97A1004F675D /* UIView+LayerEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayerEffects.h"; sourceTree = "<group>"; };
 		B2561D47163D97A6004F675D /* TestButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestButtonViewController.m; sourceTree = "<group>"; };
 		B2561D49163D97A9004F675D /* TestButtonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestButtonViewController.h; sourceTree = "<group>"; };
+		B2561D4A163D98EB004F675D /* TestButtonViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestButtonViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				B2561D49163D97A9004F675D /* TestButtonViewController.h */,
 				B2561D47163D97A6004F675D /* TestButtonViewController.m */,
+				B2561D4A163D98EB004F675D /* TestButtonViewController.xib */,
 				B2561D46163D97A1004F675D /* UIView+LayerEffects.h */,
 				B2561D44163D9795004F675D /* UIView+LayerEffects.m */,
 				B2561D43163D978C004F675D /* UIGlossyButton.h */,
@@ -275,6 +278,7 @@
 				B241761E163C9B4F00982045 /* Default-568h@2x.png in Resources */,
 				B2417621163C9B4F00982045 /* MainStoryboard_iPhone.storyboard in Resources */,
 				B2417624163C9B4F00982045 /* MainStoryboard_iPad.storyboard in Resources */,
+				B2561D4B163D98EB004F675D /* TestButtonViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
